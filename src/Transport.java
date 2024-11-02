@@ -8,14 +8,14 @@ public class Transport implements ServiceStation {
     }
 
     public void updateTyre() {
-        System.out.println("Меняем покрышку");
+        for (int i = 0; i < wheelsCount; i++) {
+            System.out.println("Меняем покрышку");
+        }
     }
 
     public void check() {
         System.out.println("Обслуживаем " + modelName);
-        for (int i = 0; i < wheelsCount; i++) {
-            updateTyre();
-        }
+        updateTyre();
     }
 
     public String getModelName() {

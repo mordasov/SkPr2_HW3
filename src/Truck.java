@@ -6,9 +6,7 @@ public class Truck extends Car {
 
     public void check() {
         System.out.println("Обслуживаем " + super.getModelName());
-        for (int i = 0; i < getWheelsCount(); i++) {
-            updateTyre();
-        }
+        updateTyre();
         checkEngine();
         checkTrailer();
     }
